@@ -1,0 +1,238 @@
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+    color:#222;
+}
+
+img{
+    width:100%;
+    display:block;
+}
+
+/* SELL PAGE */
+
+.sell-container{
+    width:90%;
+    max-width:1200px;
+    margin:40px auto;
+}
+
+.sell-header{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.sell-header h1{
+    font-size:42px;
+    color:#0057ff;
+    margin-bottom:10px;
+}
+
+/* CATEGORY GRID */
+
+.category-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    margin-bottom:50px;
+}
+
+.category-card{
+    background:white;
+    border-radius:24px;
+    padding:40px 20px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,0.05);
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.category-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+.category-card span{
+    font-size:55px;
+    color:#0057ff;
+    margin-bottom:15px;
+}
+
+.category-card h3{
+    margin-top:15px;
+}
+
+/* FORMS */
+
+.listing-form-box,
+.edit-form{
+    background:white;
+    padding:40px;
+    border-radius:24px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.05);
+}
+
+.listing-form-box{
+    display:none;
+}
+
+.form-group{
+    margin-bottom:22px;
+}
+
+.form-group label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:bold;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select{
+    width:100%;
+    padding:14px;
+    border:1px solid #ddd;
+    border-radius:12px;
+    outline:none;
+    font-size:15px;
+}
+
+.form-group textarea{
+    resize:none;
+}
+
+/* BUTTONS */
+
+.submit-btn,
+.sell-btn,
+.edit-btn,
+.delete-btn,
+.back-btn,
+.update-btn{
+    display:inline-block;
+    padding:14px 24px;
+    border:none;
+    border-radius:12px;
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.submit-btn,
+.sell-btn,
+.back-btn,
+.edit-btn,
+.update-btn{
+    background:#0057ff;
+}
+
+.delete-btn{
+    background:#dc2626;
+}
+
+.submit-btn:hover,
+.sell-btn:hover,
+.back-btn:hover,
+.edit-btn:hover,
+.delete-btn:hover,
+.update-btn:hover{
+    transform:translateY(-3px);
+}
+
+/* MY LISTINGS */
+
+.my-listings-container{
+    width:90%;
+    max-width:1300px;
+    margin:40px auto;
+}
+
+.listing-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:35px;
+    gap:20px;
+}
+
+.listing-header h1{
+    color:#0057ff;
+    font-size:42px;
+}
+
+.product-actions{
+    display:flex;
+    gap:12px;
+    margin-top:20px;
+}
+
+
+/* EDIT PAGE */
+
+.edit-container{
+    width:90%;
+    max-width:700px;
+    margin:50px auto;
+}
+
+.edit-form h1{
+    margin-bottom:30px;
+    color:#0057ff;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:992px){
+
+    .mainheader{
+        flex-direction:column;
+    }
+
+    .searchbar{
+        width:100%;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .topheader{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .listing-header,
+    .sectionheader{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:15px;
+    }
+
+    .product-actions{
+        flex-direction:column;
+    }
+
+    .herocontent h1{
+        font-size:36px;
+    }
+
+    .hero{
+        min-height:280px;
+        padding:30px 20px;
+    }
+
+    .sell-header h1{
+        font-size:34px;
+    }
+
+}
